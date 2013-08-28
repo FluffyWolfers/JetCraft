@@ -78,6 +78,7 @@ public class JetListener implements Listener{
 									p.getInventory().getItemInHand().setAmount(p.getInventory().getItemInHand().getAmount() - 1);
 								}else{
 									p.getInventory().remove(p.getInventory().getItemInHand());
+									p.sendMessage(ChatColor.DARK_PURPLE + "Your jetpack now has " + ChatColor.GREEN + str + ChatColor.DARK_PURPLE + " fuel!");
 								}
 							}
 							
