@@ -59,7 +59,7 @@ public class JetFuelCheck extends BukkitRunnable {
 									if(System.currentTimeMillis() >= time){
 										
 										int cur = Integer.parseInt(per);
-										int amm = JetCraft.j.getConfig().getInt("options.ammount-of-fuel-to-burn");
+										int amm = JetCraft.j.getConfig().getInt("options.amount-of-fuel-to-burn");
 										cur -= amm;
 										String str = String.valueOf(cur);
 										if(cur <= 25){

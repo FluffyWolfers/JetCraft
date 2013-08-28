@@ -2,6 +2,6 @@
 
 options:
   # How much fuel to burn when time is up
-  ammount-of-fuel-to-burn: 1
+  amount-of-fuel-to-burn: 1
   # How many seconds it will wait to burn fuel
   seconds-to-burn-fuel: 5
