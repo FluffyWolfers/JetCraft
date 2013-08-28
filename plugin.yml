@@ -1,0 +1,6 @@
+name: JetCraft
+main: me.FluffyWolfers.Jet.JetCraft
+version: 1.0
+permissions:
+  jet.fly:
+    default: true
