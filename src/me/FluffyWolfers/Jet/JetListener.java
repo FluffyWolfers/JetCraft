@@ -74,8 +74,11 @@ public class JetListener implements Listener{
 							if(orig >= 100){
 								p.sendMessage(ChatColor.DARK_PURPLE + "Your jetpack already has " + ChatColor.GREEN + str + ChatColor.DARK_PURPLE + " fuel!");
 							}else{
-								p.getInventory().getItemInHand().setAmount(p.getInventory().getItemInHand().getAmount() - 1);
-								p.sendMessage(ChatColor.DARK_PURPLE + "Your jetpack now has " + ChatColor.GREEN + str + ChatColor.DARK_PURPLE + " fuel!");
+								if(p.getInventory().getItemInHand().getAmount()>1){
+									p.getInventory().getItemInHand().setAmount(p.getInventory().getItemInHand().getAmount() - 1);
+								}else{
+									p.getInventory().remove(p.getInventory().getItemInHand());
+								}
 							}
 							
 							if(!JetCraft.flying.contains(p)){
